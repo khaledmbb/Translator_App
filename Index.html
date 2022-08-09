@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./Css/Style.css">
+
+  <script src="./Js/Countries.js" defer></script>
+  <script src="./Js/Main.js" defer></script>
+  <script src="./Js/all.min.js" defer></script>
+
+  <title>Translator App</title>
+</head>
+
+<body>
+  <div class="error">
+    <p></p>
+  </div>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <div id="sound1">
+              <i class="fas fa-volume-up"></i>
+            </div>
+            <div id="copy1">
+              <i class="fas fa-copy"></i>
+            </div>
+          </div>
+          <select id="select-1">
+          </select>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+        <li class="row to">
+          <select id="select-2">
+          </select>
+          <div class="icons">
+            <div id="sound2">
+              <i class="fas fa-volume-up"></i>
+            </div>
+            <div id="copy2">
+              <i class="fas fa-copy"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button>Translate Text</button>
+  </div>
+</body>
+
+</html>
